@@ -1,0 +1,10 @@
+n=int(input())
+i=input()
+l=list(map(int,i.split()))
+anss=set()
+for i in l:
+    anss.add(i)
+ans=list(anss)
+ans.sort()
+print(len(ans))
+print(*ans)
