@@ -1,0 +1,5 @@
+s=list(input())
+i1=int(s[0]+s[1]+s[2])
+i2=int(s[1]+s[2]+s[0])
+i3=int(s[2]+s[0]+s[1])
+print(i1+i2+i3)

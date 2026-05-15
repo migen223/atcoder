@@ -1,0 +1,7 @@
+n=input()
+print(n[1],end="")
+print(n[2],end="")
+print(n[0],end=" ")
+print(n[2],end="")
+print(n[0],end="")
+print(n[1])

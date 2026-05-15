@@ -1,0 +1,5 @@
+a=list(map(int,input().split()))
+b=list(map(int,input().split()))
+ap=sum(a)
+bp=sum(b)
+print(ap-bp+1)
