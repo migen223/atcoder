@@ -42,7 +42,7 @@ class DSU():
             group_members[self.leader(member)].append(member)
         return group_members
 
-#クラスカル法
+#クラスカル法 O(辺数log頂点数)
 #edgesは[(頂点,頂点,重さ)]のような辺のリスト nodesは頂点数
 #頂点番号は0-index 返り値は最小全域木の重さの和
 #anslには最小全域木を構成している辺が格納されてる

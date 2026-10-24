@@ -21,6 +21,17 @@ class BIT:
             self.bit[i] += x # フェニック木のi番目にxを足して更新
             i += -i & i # 最も右にある1の桁に1を足す
 
+    #初期設定　リストを渡すとその値を埋め込む
+    def setl(self,l):
+        for i in range(len(l)):
+            self.add(i+1,l[i])
+    
+    #値の更新 i番目の要素をxにする
+    def set(self,i,x):
+        now=self.sum(i)-self.sum(i-1)
+        self.add(i,x-now)
+    
+
 #双対BIT 区間加算、一点取得
 class DBIT:
     def __init__(self, n):
@@ -45,4 +56,13 @@ class DBIT:
             res += self.tree[i]
             i -= i & -i
         return res
-    
+
+    #初期設定 リストを渡してその値を埋め込む
+    def setl(self,l):
+        for i in range(len(l)):
+            self.add(i+1,i+1,l[i])
+        
+    #値の設定　i番目の要素をxにする
+    def set(self,i,x):
+        now=self.get(i)
+        self.add(i,i,x-now)

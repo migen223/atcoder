@@ -53,3 +53,6 @@ ans=0
 for i in range(len(comp)):
     ans+=(len(comp[i])*(len(comp[i])-1))//2
 print(ans)
+
+for i in range(3,10):
+    print(i,i*i-1,i*i-4)

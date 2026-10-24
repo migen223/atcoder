@@ -7,9 +7,9 @@ def WF(edge,nodes):
     for u,v,w in edge:
         res[u][v]=min(res[u][v],w)
         res[v][u]=min(res[v][u],w)
-    for k in range(nodes):
-        for i in range(nodes):
-            for j in range(nodes):
+    for k in range(nodes):#経由する頂点
+        for i in range(nodes):#始点
+            for j in range(nodes):#終点
                 res[i][j]=min(res[i][j],res[i][k]+res[k][j])
     
     return res

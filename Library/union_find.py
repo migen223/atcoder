@@ -46,5 +46,6 @@ class DSU():
             group_members[self.leader(member)].append(member)
         return group_members
 
+#現在の集合の個数を返す
     def count(self):
         return self.mycount

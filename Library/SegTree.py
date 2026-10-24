@@ -1,7 +1,7 @@
 #セグ木 https://qiita.com/AkariLuminous/items/32cbf5bc3ffb2f84a898
 #0-index
 class SegTree:
-    #コンストラクタは(演算,単位元,配列サイズ,初期値(なくてもok))
+    #コンストラクタは(演算,単位元,配列サイズ,初期値の配列(なくてもok))
     
     def __init__(self, op, e, n, v=None):
         self._n = n

@@ -1,4 +1,6 @@
 #bitDP https://atcoder.jp/contests/abc318/tasks/abc318_d
+#(i>>j)&1 →j bit目がたっているかどうか
+#i|(1<<j) →iのjbit目を立たせる
 n=0
 dp=[-1]*(2**n)
 edge={}
