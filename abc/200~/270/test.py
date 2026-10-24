@@ -1,0 +1,12 @@
+import sys
+from functools import cache
+sys.setrecursionlimit(300000)
+
+
+@cache
+def f(n):
+    if n == 0:
+        return 0
+    return f(n - 1) + 1
+
+print(f(3332))
